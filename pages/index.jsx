@@ -18,8 +18,8 @@ export default function Home() {
       <Wrapper>
         <div className=' text-center max-w-[800px] mt-[50px] md:mt-[80px] mx-auto'>
 
-          <div className='font-bold text-[28px] md:text-[34px]  mb-2 leading-tight '>Discover Your Signature Look</div>
-          <div className='felx text-[20px] mb-4'>Explore our thoughtfully curated collection of shoes that caters to various styles, occasions, and personalities.  </div>
+          <div className='font-bold text-[28px] md:text-[34px]  mb-2 leading-tight '>Prepare for Your Sacred Journey   </div>
+          <div className='felx text-[20px] mb-4'>Explore our thoughtfully curated selection of essentials designed to enhance your Umrah and Hajj experience with comfort, reverence, and ease.  </div>
 
         </div>
 
