@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import Wrapper from "./Wrapper";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -94,14 +95,10 @@ const Footer = () => {
                         href="https://twitter.com"
                         className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer"
                     >
-                        <FaTwitter size={20} />
+                        <FaWhatsapp size={20} />
                     </Link>
-                    <div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer">
-                        <FaYoutube size={20} />
-                    </div>
-                    <div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer">
-                        <FaInstagram size={20} />
-                    </div>
+                    
+                    
                 </div>
                 {/* RIGHT END */}
             </Wrapper>

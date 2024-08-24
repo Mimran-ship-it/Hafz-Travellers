@@ -45,14 +45,15 @@ const ProductCard = ({ slug,query }) => {
             initial={{ opacity: 0, scale: 1, y: -50 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
-            className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer hover:shadow-2xl'
-          >
+            className='bg-white border border-black shadow-xl duration-200 hover:scale-105 cursor-pointer '
+          > 
             <Link href={`/product/${item._id}`}>
               <Image
-                src={`/productIamages/${item.img}/thumbnail.webp`}
+                src={`/productIamages/${item.img}/thumbnail.jpg`}
                 alt="Product-Image"
                 width={400}
                 height={400}
+                className='transition-transform duration-300 hover:scale-105'
               />
               <div className='p-4 text-black-[0.9]'>
                 <h2 className='text-lg font-medium'>{item.title}</h2>
@@ -77,14 +78,15 @@ const ProductCard = ({ slug,query }) => {
             initial={{ opacity: 0, scale: 1, y: -50 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
-            className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer hover:shadow-2xl'
+            className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer '
           >
             <Link href={`/product/${item._id}`}>
               <Image
-                src={`/productIamages/${item.img}/thumbnail.webp`}
+                src={`/productIamages/${item.img}/thumbnail.jpg`}
                 alt="Product-Image"
                 width={400}
                 height={400}
+                className='transition-transform duration-300 hover:scale-105 '
               />
               <div className='p-4 text-black-[0.9]'>
                 <h2 className='text-lg font-medium'>{item.title}</h2>
@@ -109,14 +111,15 @@ const ProductCard = ({ slug,query }) => {
             initial={{ opacity: 0, scale: 1, y: -50 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
-            className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer hover:shadow-2xl'
+            className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer'
           >
             <Link href={`/product/${item._id}`}>
               <Image
-                src={`/productIamages/${item.img}/thumbnail.webp`}
+                src={`/productIamages/${item.img}/thumbnail.jpg`}
                 alt="Product-Image"
                 width={400}
                 height={400}
+                className='transition-transform duration-300 hover:scale-105'
               />
               <div className='p-4 text-black-[0.9]'>
                 <h2 className='text-lg font-medium'>{item.title}</h2>

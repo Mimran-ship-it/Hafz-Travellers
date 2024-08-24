@@ -1,5 +1,7 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link'
 import '@/styles/globals.css'
 import Head from 'next/head'
 import { useState, useEffect, createContext, useContext,oneMinusQty } from 'react'
@@ -121,31 +123,35 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Head />
-      <Headroom >
-        <Header cart={cart}/>
-      </Headroom>
+    <Link
+        href="https://twitter.com"
+        className="fixed bottom-4 right-1 rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
+    >
+        <FaWhatsapp size={50} />
+    </Link>
+    
+    <Head />
+    <Headroom>
+        <Header cart={cart} />
+    </Headroom>
 
-      <productInfo.Provider className={"dark"} value={{ cart, addToCart, oneMinusQty, clearCart, subTotal,oneAddQty,delQty }}  {...pageProps} >
-
+    <productInfo.Provider className={"dark"} value={{ cart, addToCart, oneMinusQty, clearCart, subTotal, oneAddQty, delQty }} {...pageProps} >
         <Component />
-
-      </productInfo.Provider>
-      {/* <Wrapper> */}
-      <Footer />
-      {/* </Wrapper> */}
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
+    </productInfo.Provider>
+    
+    <Footer />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
         crossOrigin="true"
-      />
-      <link
+    />
+    <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
-      />
+    />
+</>
 
-    </>
   )
 }
