@@ -90,16 +90,28 @@ Items.map((key)=>{
 
                         {/* Price Details */}
                         <div className='text-lg font-semibold'>
-                            Price : {key.price} $
+                            Price : {key.price} /- Rs
                         </div>
                         <div className='text-sm text-black/[0.5]'>
                             Incl. of Texes
                         </div>
-                        <div className='text-sm text-black/[0.5] mb-20'>
+                        <div className='text-sm text-black/[0.5] mb-5'>
                             {`(Also includes all applicable duties)`}
                         </div>
 
                         
+                                        {/* Descriptive Paragraph Start */}
+                                        <div>
+                                            <div className='text-lg font-bold mb-0'>
+                                                Description
+                                                
+                                            </div>
+                                            <div className='text-md mb-5'>{key.desc}    </div>
+                                        </div>
+                                         
+                                        <button className='w-full  text-lg bg-black text-white border  rounded-full py-4 font-md transition-transform active:scale-95 flex items-center justify-center hover:opacity-75 mb-3'>
+                                            Chat on WhatsApp 
+                                        </button>   
 
 
 
