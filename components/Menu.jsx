@@ -4,10 +4,9 @@ import { BsChevronDown } from 'react-icons/bs';
 
 const data = [
     { id: 1, name: 'Home', url: '/' },
-    { id: 2, name: 'Sort', subSortMenu: true },
-    { id: 3, name: 'Services', subMenu: true },
-    { id: 4, name: 'Contact', url: '/contact' },
-    { id: 5, name: 'Login', url: '/login' },
+    { id: 2, name: 'Services', subMenu: true },
+    { id: 3, name: 'Contact', url: '/contact' },
+    { id: 4, name: 'Login', url: '/login' },
 ];
 
 const subMenuData = [

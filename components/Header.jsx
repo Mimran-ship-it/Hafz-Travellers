@@ -126,14 +126,15 @@ setSuggestions(undefined)
       <motion.wrapper initial={{y:-30}} animate={{y:0}} transition={{duration:.3}} className='flex pt-3 pb-1 items-center justify-between mx-6'>
 
         {/* Logo of the Store */}
-        <Link href={"/"}>
+        <Link className='flex justify-center items-center' href={"/"}>
           <Image
             src="/HafizLogo.jpg"
             alt="Logo"
             width={90}
             height={90}
-            className='w-[80px] md:w-[90px] mr-2 mt-2 border border-transparent rounded-md transition-transform duration-300 hover:scale-110 px-4 py-2'
+            className='w-[80px] md:w-[90px]  mt-2 border border-transparent rounded-md transition-transform duration-300 hover:scale-110 px-4 py-2'
           />
+          <div className='font-bold'>𝘏𝘈𝘍𝘐𝘡 𝘛𝘙𝘈𝘝𝘌𝘓𝘓𝘌𝘙</div>
         </Link>
 
 
@@ -226,14 +227,7 @@ setSuggestions(undefined)
           </div>
       
 
-          {/* Cart Icon */}
-         {!mobileMenu&& <Link href="/cart">
-            <div className='w-8 md:w-12 h-8 mr-2 md:h-12 rounded-full flex justify-center  items-center transition-transform duration-300 hover:scale-110  relative cursor-pointer'>
-              <BsCart3 className='text-[15px] md:text-[20px]' />
-              <div className='h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-red-600 flex justify-center items-center absolute top-1 left-5 md:left-7 text-white text-[10px] md:text-[12px] px-[2px] md:px-[5px]'>{Number}</div>
-            </div>
-          </Link>
-}
+         
           {/* Heart Icon */}
          
         </div>

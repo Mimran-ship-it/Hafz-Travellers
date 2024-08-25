@@ -42,7 +42,7 @@ const ProductCard = ({ slug,query }) => {
         return (
         <>  {item.category==slug?.toLowerCase()&&<motion.div
             key={item._id}
-            initial={{ opacity: 0, scale: 1, y: -50 }}
+            initial={{ opacity: 0, scale: 1, y: -30 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
             className='bg-white border border-black shadow-xl duration-200 hover:scale-105 cursor-pointer '
@@ -60,7 +60,7 @@ const ProductCard = ({ slug,query }) => {
                 <div className='flex items-center text-black-[0.8]'>
                   <p className='mr-2 text-lg font-semibold'>{item.price}$</p>
                   <p className='text-base font-medium line-through'>{item.originalPrice}$</p>
-                  <p className='ml-auto text-green-500 font-base'>{discountPercentage}% off</p>
+                  <p className='ml-auto text-green-300 font-base'>{discountPercentage}% off</p>
                 </div>
               </div>
             </Link>
@@ -75,7 +75,7 @@ const ProductCard = ({ slug,query }) => {
         return (
         <>  <motion.div
             key={item._id}
-            initial={{ opacity: 0, scale: 1, y: -50 }}
+            initial={{ opacity: 0, scale: 1, y: -30 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
             className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer '
@@ -93,7 +93,7 @@ const ProductCard = ({ slug,query }) => {
                 <div className='flex items-center text-black-[0.8]'>
                   <p className='mr-2 text-lg font-semibold'>{item.price}$</p>
                   <p className='text-base font-medium line-through'>{item.originalPrice}$</p>
-                  <p className='ml-auto text-green-500 font-base'>{discountPercentage}% off</p>
+                  <p className='ml-auto text-green-300 font-base'>{discountPercentage}% off</p>
                 </div>
               </div>
             </Link>
@@ -108,7 +108,7 @@ const ProductCard = ({ slug,query }) => {
         return (
           <motion.div
             key={item._id}
-            initial={{ opacity: 0, scale: 1, y: -50 }}
+            initial={{ opacity: 0, scale: 1, y: -30 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0, duration: 0.3, stiffness: 50 }}
             className='bg-white shadow-xl duration-200 hover:scale-105 cursor-pointer'
@@ -126,7 +126,7 @@ const ProductCard = ({ slug,query }) => {
                 <div className='flex items-center text-black-[0.8]'>
                   <p className='mr-2 text-lg font-semibold'>{item.price}$</p>
                   <p className='text-base font-medium line-through'>{item.originalPrice}$</p>
-                  <p className='ml-auto text-green-500 font-base'>{discountPercentage}% off</p>
+                  <p className='ml-auto text-green-300 font-base'>{discountPercentage}% off</p>
                 </div>
               </div>
             </Link>
