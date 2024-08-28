@@ -79,13 +79,13 @@ const Header =   (cart) => {
   return (
 
     <div  className='bg-white w-screen '> 
-{ (isClient&&showsearch)&&   <motion.div initial={{y:-30}} animate={{y:0}} transition={{duration:.3}} className=' pt-3 pb-3 justify-between right-3  items-center gap-4 text-black'>
+{ (isClient&&showsearch)&&   <motion.div initial={{y:-30}} animate={{y:0}} transition={{duration:.3}} className=' pt-3 pb-3 mt-6  justify-between right-3  items-center gap-4 text-black'>
             <form   onSubmit={(e) => 
 {              e.preventDefault();
               handleSearch(searchQuery)
               
             }
-              } className='flex justify-center   items-center'>
+              } className='flex justify-center  items-center'>
             
             <input
                 type='text'
@@ -123,7 +123,7 @@ setSuggestions(undefined)
           </motion.div>}
 
   {(isClient&&!showsearch)&&  
-      <motion.wrapper initial={{y:-30}} animate={{y:0}} transition={{duration:.3}} className='flex pt-3 pb-1 items-center justify-between mx-6'>
+      <motion.wrapper initial={{y:-30}} animate={{y:0}} transition={{duration:.3}} className='flex  pt-3 pb-1 items-center justify-between mx-6'>
 
         {/* Logo of the Store */}
         <Link className='flex justify-center items-center' href={"/"}>
@@ -208,7 +208,7 @@ setSuggestions(undefined)
                 }}
                 className=' px-2 relative border border-gray-600 rounded-lg p-1 outline-none'
               />
-               {suggestions&&<div className='bg-white max-h-72 overflow-y-auto z-40 top-16 absolute  text-black shadow-xl'>{suggestions?.map((keys)=>{
+               {suggestions&&<div className='bg-white mt-4 max-h-72 overflow-y-auto z-40 top-16 absolute  text-black shadow-xl'>{suggestions?.map((keys)=>{
               // 
                 return(
                   <>
@@ -221,7 +221,7 @@ setSuggestions(undefined)
                 
                 className='bg-black  text-white rounded-lg px-3 ml-1 py-1 '
               
-                placeholder='Search'
+               
               />
             </form>
           </div>
