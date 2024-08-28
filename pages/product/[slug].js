@@ -79,7 +79,7 @@ Items.map((key)=>{
                     <div className="flex-[1] py-3">
 
                         {/* Product Title */}
-                        <div className='font-bold text-[31px] mb-2'>
+                        <div className='font-bold  text-[30px] mb-2'>
                             {key.title}
                         </div>
 
@@ -110,7 +110,7 @@ Items.map((key)=>{
                                         </div>
                                          
                                         <button className='w-full  text-lg bg-black text-white border  rounded-full py-4 font-md transition-transform active:scale-95 flex items-center justify-center hover:opacity-75 mb-3'>
-                                            Chat on WhatsApp 
+                                           Contact Now
                                         </button>   
 
 

@@ -10,19 +10,17 @@ import { BsChevronDown,BsChevronUp } from 'react-icons/bs'
 
 // Objects containing info 
 const data = [
-    { id: 1, name: "Home", url: "/" },
-    { id: 2, name: 'Sort', subSortMenu: true },     
-    { id: 3, name: "About", url: "/about" },
-    { id: 4, name: "Categories", subMenu: true },
+    { id: 1, name: "Home", url: "/" },  
+    { id: 4, name: "Services", subMenu: true },
     { id: 5, name: "Contact", url: "/contact" },
     { id: 6, name: "Login", url: "/login" },
 ];
 
 const subMenuData = [
-    { id: 1, name: "Jordan", doc_count: 11 },
-    { id: 2, name: "Sneakers", doc_count: 8 },
-    { id: 3, name: "running shoes", doc_count: 64 },
-    { id: 4, name: "Football shoes", doc_count: 107 },
+    { id: 1, name: 'Hajj Services' },
+    { id: 2, name: 'Umrah services'},
+    { id: 3, name: 'Hotel services'},
+    { id: 4, name: 'Food services'},
 ];
 const subSortData = [
     { id: 1, name: 'Price low to high' },
@@ -43,7 +41,7 @@ useEffect(() => {
     return (
         <div >
             <motion.ul initial={{opacity:0}} animate={{ opacity:1}} transition={{duration:.4}}
-             className=' flex flex-col z-40 lg:hidden absolute top-[50px] font-medium left-0 w-full h-[calc(100vh-50px)] text-black bg-white border-t'>
+             className='mt-6 flex flex-col z-40 lg:hidden absolute top-[50px] font-medium left-0 w-full h-[calc(100vh-50px)] text-black bg-white border-t'>
                 {
                     data.map((item) => {
                         return (
@@ -97,10 +95,11 @@ useEffect(() => {
                                         {/* Menu in Category option */}
                                         
                                         {showCatMenu && (
-                                            <motion.ul animate={{y:0}} initial={{y:-30}} transition={{duration:.4}} className='bg-black/[0.05] -mx-5 mt-4 -mb-4 '>
+                                            <ul  className='bg-black/[0.05] -mx-5 mt-4 -mb-4 '>
                                                 {subMenuData.map((subMenu) => {
                                                     return (
                                                         <Link
+                                                        
                                                             key={subMenu.id} href={"/"}
                                                             onClick={() => {
                                                                 setShowCatMenu(false);
@@ -116,7 +115,7 @@ useEffect(() => {
                                                         </Link>
                                                     )
                                                 })}
-                                            </motion.ul>
+                                            </ul>
                                         )}
                                        
                                     </li>}
