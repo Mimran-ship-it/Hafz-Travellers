@@ -107,7 +107,7 @@ useEffect(() => {
                                                             }}>
 
                                                          {isClient&&   <li onClick={()=>{
-                                                                window.location.href=`/category/${subMenu.name}`
+                                                                window.location.href=`/services/${subMenu.name}`
                                                             }} className='py-4 px-8 border-t flex justify-between'>
                                                                 {subMenu.name}
                                                                
