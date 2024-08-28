@@ -109,7 +109,7 @@ Items.map((key)=>{
                                             <div className='text-md mb-5'>{key.desc}    </div>
                                         </div>
                                          
-                                        <a href="https://wa.me/+923074583567" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://wa.me/+923037078822" target="_blank" rel="noopener noreferrer">
   <button className='w-full text-lg bg-black text-white border rounded-full py-4 font-md transition-transform active:scale-95 flex items-center justify-center hover:opacity-75 mb-3'>
     Contact Now
   </button>
