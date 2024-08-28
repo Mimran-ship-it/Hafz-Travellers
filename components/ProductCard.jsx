@@ -58,13 +58,11 @@ const ProductCard = ({ slug,query }) => {
               <div className='p-4 text-black-[0.9]'>
                 <h2 className='text-lg font-medium'>{item.title}</h2>
                 <div className='flex items-center text-black-[0.8]'>
-<<<<<<< HEAD
+
                   <p className='mr-2 text-lg font-semibold'>{item.price} /- Rs</p>
                   <p className='text-base font-medium line-through'>{item.originalPrice} /- Rs</p>
-=======
-                  <p className='mr-2 text-lg font-semibold'>{item.price}$</p>
-                  <p className='text-base font-medium line-through'>{item.originalPrice}$</p>
->>>>>>> 8009f0b (comit)
+         
+
                   <p className='ml-auto text-green-300 font-base'>{discountPercentage}% off</p>
                 </div>
               </div>
@@ -96,13 +94,11 @@ const ProductCard = ({ slug,query }) => {
               <div className='p-4 text-black-[0.9]'>
                 <h2 className='text-lg font-medium'>{item.title}</h2>
                 <div className='flex items-center text-black-[0.8]'>
-<<<<<<< HEAD
+
                   <p className='mr-2 text-lg font-semibold'>{item.price}/- Rs</p>
                   <p className='text-base font-medium line-through'>{item.originalPrice}</p>
-=======
-                  <p className='mr-2 text-lg font-semibold'>{item.price}$</p>
-                  <p className='text-base font-medium line-through'>{item.originalPrice}$</p>
->>>>>>> 8009f0b (comit)
+
+                
                   <p className='ml-auto text-green-300 font-base'>{discountPercentage}% off</p>
                 </div>
               </div>
