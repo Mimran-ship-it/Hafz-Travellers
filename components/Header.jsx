@@ -134,7 +134,7 @@ setSuggestions(undefined)
             height={90}
             className='w-[80px] md:w-[90px]  mt-2 border border-transparent rounded-md transition-transform duration-300 hover:scale-110 px-4 py-2'
           />
-          <div className='font-bold'>𝘏𝘈𝘍𝘐𝘡 𝘛𝘙𝘈𝘝𝘌𝘓𝘓𝘌𝘙</div>
+          <div className='font-bold sm:text-base text-xs '>𝘏𝘢𝘧𝘪𝘻 𝘐𝘣𝘳𝘢𝘩𝘪𝘮 𝘛𝘳𝘢𝘷𝘦𝘭𝘭𝘦𝘳 </div>
         </Link>
 
 
