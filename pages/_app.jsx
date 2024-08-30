@@ -125,7 +125,7 @@ export default function App({ Component, pageProps }) {
     <>
     <Link
         target='blank'
-        href="https://wa.me/+923037078822"
+        href="https://wa.me/+923074583567"
         className="fixed bottom-4 right-1  text-green-500 duration-200  hover:scale-110 cursor-pointer"
     >
         <FaWhatsapp className='hover:bg-white hover:rounded-full' size={50} />
