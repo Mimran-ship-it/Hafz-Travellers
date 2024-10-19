@@ -19,8 +19,8 @@ useEffect(() => {
         const result = await response.json();
 
         // Ensure the response has a "products" property and it's an array before setting state
-        if (result && Array.isArray(result.UmmrahPackages)) {
-          setItems(result.UmmrahPackages);
+        if (result && Array.isArray(result.ummrahPackages)) {
+          setItems(result.ummrahPackages);
         } else {
           console.error('Invalid data structure received:', result);
         }
