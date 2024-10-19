@@ -8,16 +8,16 @@ const ProductCard = ({ slug,query }) => {
   const [products, setProducts] = useState([]);
   const [Category, setCategory] = useState('');
   
-  
-// console.log('data',query.length)s
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/getProducts');
+        const response = await fetch('/api/getPackages');
         const result = await response.json();
-
-        if (result && Array.isArray(result.products)) {
-          setProducts(result.products);
+  
+        // Update to handle ummrahPackages instead of products
+        if (result && Array.isArray(result.ummrahPackages)) {
+          setProducts(result.ummrahPackages);
         } else {
           console.error('Invalid data structure received:', result);
         }
@@ -25,9 +25,10 @@ const ProductCard = ({ slug,query }) => {
         console.error('Error fetching data:', error);
       }
     };
-
+  
     fetchData();
   }, []);
+  
 
   useEffect(() => {
     setCategory(slug);
